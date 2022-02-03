@@ -156,7 +156,7 @@ class InstallationModelDatabase extends JModelBase
 			return false;
 		}
 
-		$shouldCheckLocalhost = getenv('JOOMLA_INSTALLATION_DISABLE_LOCALHOST_CHECK') !== '1';
+		$shouldCheckLocalhost = 0;
 
 		// Per default allowed DB hosts: localhost / 127.0.0.1 / ::1 (optionally with port)
 		$localhost = '/^(((localhost|127\.0\.0\.1|\[\:\:1\])(\:[1-9]{1}[0-9]{0,4})?)|(\:\:1))$/';
